@@ -12,99 +12,98 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
         integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     
-    <!-- HEADER -->
+    <!-- !HEADER -->
     <header class="header">
         <div class="container flex">
            <!-- Логотип -->
             <div class="logo flex">
                 <img src="./img/header/logo.svg" alt="logo">
                 <div>
-                    <h6 class="logo-title">
+                    <h6 class="logo__title">
                         Foundation
                     </h6>
-                    <p class="logo-text">
+                    <p class="logo__text">
                         Startup landing template
                     </p>
                 </div>
             </div>
             <!-- Навігація -->
-            <nav class="header_nav flex">
-                <ul class="header_ul flex">
-                    <li class="header_li">
-                        <a class="header_link" href="">Home</a>
+            <nav class="header__nav flex">
+                <ul class="header__ul flex">
+                    <li class="header__li">
+                        <a class="header__link" href="">Home</a>
                     </li>
-                    <li class="header_li">
-                        <a class="header_link" href="">Stories</a>
+                    <li class="header__li">
+                        <a class="header__link" href="">Stories</a>
                     </li>
                 </ul>
-                <button class="header_button">
+                <button class="header__button">
                     Get Started
                 </button>
             </nav>
         </div>
     </header>
 
-    <!-- MAIN PAGE -->
+    <!-- !MAIN PAGE -->
     <main class="main">
-        <div class="container flex">
+        <div class="container flex main__container">
             <div>
                 <!-- Title -->
-                <div>
-                    <h1 class="main_title">
-                        Build stunning <br> websites & apps.
-                    </h1>
-                </div>
+                <h1 class="main__title">
+                    Build stunning <br> websites & apps.
+                </h1>
                 <!-- Text` -->
-                <p class="main_text">
+                <p class="main__text">
                     Create live segments and target the right people for messages based on their behaviors.
                 </p>
                 <!-- Button -->
-                <div class="main_button">
-                    <button class="main_button-blue" type="button">
+                <div class="main__button">
+                    <button class="main__button-blue" type="button">
                         Get Started
                     </button>
-                    <button class="main_button-white" type="button">
+                    <button id="open__modal" class="main__button-white" type="button">
                         Learn More
                     </button>
                 </div>
             </div>
-            <div class="main_img">
+
+            <div class="main__img">
                 <img src="./img/main/main-img.png" alt="main image">
             </div>
-            <dir>
-
-            </dir>
         </div>
     </main>
 
 
     <!-- !WHAT & WHO -->
-    <section class="whatwho">
+    <section class="what__who">
         <!-- Text Content -->
-        <div class="ww_box">
-            <div class="whatwho_box">
-                <h3 class="whatwho_title">
+        <div class="ww__box">
+            <div class="what__who-box">
+                <h3 class="what__who-title">
                     What is it about?
                 </h3>
-                <p class="whatwho_text">
+                <p class="what__who-text">
                     Building a website for a startup that looks amazing is not a rocket science anymore.
                 </p>
             </div>
-            <div class="whatwho_box">
-                <h3 class="whatwho_title">
+            <div class="what__who-box">
+                <h3 class="what__who-title">
                     Who is it for?
                 </h3>
-                <p class="whatwho_text">
+                <p class="what__who-text">
                     Startups, small companies and teams, entrepreneurs and web developers.
                 </p>
             </div>
         </div>
+    </section>
+    <section class="logo__com">
         <!-- Logo Companys -->
         <div class="brands container">
             <ul class="features_ul flex">
@@ -131,7 +130,7 @@
     </section>
 
 
-    <!-- FEATURES -->
+    <!-- !FEATURES -->
     <section class="features">
         <!-- Features Component -->
         <div class="container flex">
@@ -197,16 +196,16 @@
     </section>
 
 
-    <!-- TEAM INBOX -->
+    <!-- !TEAM INBOX -->
     <section class="team">
-        <div class="container flex">
+        <div class="container flex flex_inbox-column">
             <!-- Team Left -->
-            <div class="team_left">
-                <img src="./img/team/vesy.svg" alt="image clock">
+            <div class="team_image">
+                <img class="team_image-img" src="./img/team/vesy.svg" alt="image clock">
             </div>
             
             <!-- Team Right -->
-            <div class="team_right container">
+            <div class="team_info container">
                 <!-- Title Text -->
                 <div class="team_box">
                     <h4 class="team_subtitle">
@@ -242,7 +241,7 @@
     </section>
 
 
-    <!-- COMMUNICATE BETTER -->
+    <!-- !COMMUNICATE BETTER -->
     <section class="communicate">
         <div class="comm_div container ">
             <div class="container flex">
@@ -297,7 +296,7 @@
     </section>
 
 
-    <!-- ENGAGE VISITORS -->
+    <!-- !ENGAGE VISITORS -->
     <section class="engage">
         <div class="engage_box container">
             <!-- Engage Text-Box -->
@@ -346,7 +345,7 @@
     </section>
 
 
-    <!-- TRUSTED BY -->
+    <!-- !TRUSTED BY -->
     <section class="trusted">
         <!-- Logo Companys -->
         <div class="brands container">
@@ -398,38 +397,83 @@
     </section>
 
 
-    <!-- WE'RE HIRING -->
+    <!-- !WE'RE HIRING -->
     <section class="hiring">
-        <div class="hiring_div container">
-            <!-- Text+Button -->
-            <div class="hiring_textbox container">
-                <h2 class="hiring_title">
-                    We’re hiring
-                </h2>
-                <p class="hiring_text">
-                    We’re a team of lifelong learners. We’re equal parts left and right brained.
-                </p>
-                <button class="hiring_button" type="button">
-                    More about Company
-                </button>
-            </div>
-            <!-- Form+Content -->
-            <div class="hiring_form container">
-                <div class="">
-
+        <div class="hiring__div container">
+            <div>
+                <!-- Text+Button -->
+                <div class="hiring__textbox">
+                    <h2 class="hiring__title">
+                        We’re hiring
+                    </h2>
+                    <p class="hiring__text">
+                        We’re a team of lifelong learners. We’re equal parts left and right brained.
+                    </p>
+                    <button class="hiring__button" type="button">
+                        More about Company
+                    </button>
                 </div>
-                <div class="">
 
+                <!-- jQery -->
+                <div class="hiring__prof flex">
+                    <div class="flex">
+                        <p class="hiring__prof-title">
+                            Front-End Developer
+                        </p>
+                    </div>
+                    <p class="hiring__prof-city">
+                            Los Angeles / Remote
+                    </p>
+                    <p class="hiring__icon">
+                        >
+                    </p>
+                    <p class="hiring__prof-text">
+                        Everything you need to start building – including open-source code, documentation.
+                    </p>
                 </div>
-                <div class="">
-
+                <div class="hiring__prof flex">
+                    <div class="flex">
+                        <p class="hiring__prof-title">
+                            Community Manager
+                        </p>
+                    </div>
+                    <div>
+                        <p class="hiring__prof-city">
+                            New-York / Full-Time
+                        </p>
+                    </div>
+                    <p class="hiring__icon">
+                        >
+                    </p>
+                    <p class="hiring__prof-text">
+                        Everything you need to start building – including open-source code, documentation.
+                    </p>
+                </div>
+                <div class="hiring__prof flex">
+                    <div class="flex">
+                        <p class="hiring__prof-title">
+                            UI/UX Designer
+                        </p>
+                        
+                    </div>
+                    <div>
+                        <p class="hiring__prof-city">
+                            New-York / Full-Time
+                        </p>
+                    </div>
+                    <p class="hiring__icon">
+                        >
+                    </p>
+                    <p class="hiring__prof-text">
+                        Everything you need to start building – including open-source code, documentation.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <!-- ALL SURFACES COVERED -->
+    <!-- !ALL SURFACES COVERED -->
     <section class="covered">
         <div class="container">
             <div class="div_gallery container">
@@ -467,7 +511,7 @@
     </section>
 
 
-    <!-- START YOUR FRE TRIAL -->
+    <!-- !START YOUR FRE TRIAL -->
     <section class="start">
         <div class="start_div container flex">
             <!-- Image Window -->
@@ -504,101 +548,114 @@
     </section>
 
 
-    <!-- FOOTER -->
+    <!-- !FOOTER -->
     <footer class="footer">
         <!-- About & Apps & Product & Company-->
-        <div class="footer_div container flex">
-            <div class="footer_about">
+        <div class="footer__top container flex">
+            <div class="footer__about">
                 <!-- Logo -->
-                <div class="footer_div-logo container">
+                <div class="footer__div-logo">
                     <!-- Логотип -->
-                    <div class="logo_footer flex">
+                    <div class="footer__logo">
                         <img src="./img/footer/logo_blue.svg" alt="logo">
                         <div>
-                            <h6 class="logo-title">
+                            <h6 class="logo__title">
                                 Foundation
                             </h6>
-                            <p class="logo-text">
+                            <p class="logo__text">
                                 Startup landing template
                             </p>
                         </div>
                     </div>
                     <!-- Текст -->
-                    <p class="footer_text">
+                    <p class="footer__text">
                         Foundation is a website template for startups and small teams. It helps to build a website in no time.
                     </p>
                     <!-- AppStore & PlayMarket -->
-                    <div class="footer_apps">
+                    <div class="footer__apps">
                         <img src="./img/footer/AppStore.png" alt="AppStore">
                         <img src="./img/footer/Google Play.png" alt="PlayMarket">
                     </div>
                 </div>
                 <!-- Product & Company -->
-                <div class="footer_prod-company flex">
-                    <!-- Product -->
-                    <div>
-                        <h5 class="footer_subtitle">
-                            Product
-                        </h5>
-                        <ul class="footer_ul-prod">
-                            <li class="footer_li-text">Acquire</li>
-                            <li class="footer_li-text">Users</li>
-                            <li class="footer_li-text">Content</li>
-                            <li class="footer_li-text">Marketing</li>
-                            <li class="footer_li-text">Website</li>
-                            <li class="footer_li-text">Templates</li>
-                            <li class="footer_li-text">Customer</li>
-                            <li class="footer_li-text">Management</li>
-                            <li class="footer_li-text">Virtual</li>
-                            <li class="footer_li-text">Inbox</li>
-                        </ul>
-                    </div>
-                    <!-- Company -->
-                    <div>
-                        <h5 class="footer_subtitle">
-                            Company
-                        </h5>
-                        <ul class="footer_ul-company">
-                            <li class="footer_li-text">About</li>
-                            <li class="footer_li-text">Foundation</li>
-                            <li class="footer_li-text">Brand</li>
-                            <li class="footer_li-text">Guidelines</li>
-                            <li class="footer_li-text">Press</li>
-                            <li class="footer_li-text">Kit</li>
-                            <li class="footer_li-text">Support</li>
-                        </ul>
+                <div class="footer__prodcom">
+                    <div class="footer__products">
+                        <!-- Product -->
+                        <div class="footer_col-products">
+                            <h5 class="footer__subtitle">
+                                Product
+                            </h5>
+                            <ul class="footer__ul-prod">
+                                <li class="footer_li-text">Acquire Users</li>
+                                <li class="footer_li-text">Content Marketing</li>
+                                <li class="footer_li-text">Website Templates</li>
+                                <li class="footer_li-text">Customer Management</li>
+                                <li class="footer_li-text">Virtual Inbox</li>
+                            </ul>
+                        </div>
+                        <!-- Company -->
+                        <div class="footer__col-company">
+                            <div>
+                                <h5 class="footer__subtitle">
+                                    Company
+                                </h5>
+                            </div>
+                            <ul class="footer__ul-company">
+                                <li class="footer_li-text">About Foundation</li>
+                                <li class="footer_li-text">Brand Guidelines</li>
+                                <li class="footer_li-text">Press Kit</li>
+                                <li class="footer_li-text">Support</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
+        <hr class="footer__line">
         <!-- Sociallinks & More -->
-        <div class="footer_links container flex">
-                <ul class="footer_tpl">
+        <div class="footer__bottom">
+            <div class="container flex">
+                <ul class="footer__policy">
                     <li>Terms</li>
                     <li>Privacy</li>
                     <li>License</li>
                 </ul>
-                <ul class="footer_social">
-                    <li class="footer_li-social">
-                        <a href="#">
-                            <img src="./img/footer/twit.png" alt="twitter">
-                        </a>
+                <ul class="footer__social">
+                    <li>
+                        <img src="./img/footer/twit.png" alt="twitter">
                     </li>
-                    <li class="footer_li-social">
-                        <a href="#">
-                            <img src="./img/footer/fb.png" alt="facebook">
-                        </a>
+                    <li>
+                        <img src="./img/footer/fb.png" alt="facebook">
                     </li>
-                    <li class="footer_li-social">
-                        <a href="#">
-                            <img src="./img/footer/in.png" alt="linkedin">
-                        </a>
+                    <li>
+                        <img src="./img/footer/in.png" alt="linkedin">
                     </li>
                 </ul>
+            </div>
+                
         </div>
-        
     </footer>
 
+
+
+    <!-- ?МОДАЛЬНЕ ВІКНО -->
+    <div class="modal__overlay">
+        <div class="modal">
+            <p class="modal__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur ipsum est ad autem voluptatum optio expedita nesciunt, sapiente suscipit tenetur fuga at nisi maxime natus reiciendis id cupiditate sed ratione quo soluta cumque perferendis placeat repellendus? Assumenda ipsa sapiente rerum consequatur, cum molestiae quae fuga magni nostrum ducimus, nulla quasi?
+            </p>
+            <p class="close">
+                X
+            </p>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/modal.js"></script>
+    
 </body>
 </html>
