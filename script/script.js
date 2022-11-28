@@ -4,6 +4,8 @@ $('.hiring__prof > div').on('click', function () {
     $(this).next('.hiring__prof-text').slideToggle(300);
 })
 
-$('.features__box').on('click', function () {
-    $(this).next('.features__item-text').slideToggle(300)
+$('.features__item-box').on('click', function () {
+    $(this).toggleClass('change__color-title');
+    $(this).parent('.features__box').toggleClass('features__box-border');
+    $(this).next('.features__item-text').slideToggle(300);
 })
