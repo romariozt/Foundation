@@ -1,0 +1,15 @@
+.bx-wrapper {
+  border: 0;
+  box-shadow: none;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  max-width: 750px;
+
+}
+.bx-wrapper .bx-pager .bx-default-pager a {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: blue;
+}

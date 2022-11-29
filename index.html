@@ -14,15 +14,18 @@
         integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"/>
     
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet">    
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"
+        integrity="sha512-p55Bpm5gf7tvTsmkwyszUe4oVMwxJMoff7Jq3J/oHaBk+tNQvDKNz9/gLxn9vyCjgd6SAoqLnL13fnuZzCYAUA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/carusel.css">
 </head>
 
 <body>
     
     <!-- !HEADER -->
-    <header class="header">
+    <header id="header" class="header">
         <div class="container flex">
            <!-- Логотип -->
             <div class="logo flex">
@@ -40,7 +43,7 @@
             <nav class="header__nav flex">
                 <ul class="header__ul flex">
                     <li class="header__li">
-                        <a class="header__link" href="">Home</a>
+                        <a class="header__link" id="hiring-link" href="">Home</a>
                     </li>
                     <li class="header__li">
                         <a class="header__link" href="">Stories</a>
@@ -350,7 +353,7 @@
 
 
     <!-- !TRUSTED BY -->
-    <section class="trusted">
+    <section>
         <!-- Logo Companys -->
         <div class="brands container">
             <ul class="features_ul flex">
@@ -374,35 +377,73 @@
                 </li>
             </ul>
         </div>
+    </section>
 
-        <!-- Content -->
-        <div class="trusted_content container">
-            <div class="trusted_div">
-                <p class="trusted_title">
+    <section class="trusted container">
+        <!-- Carusel -->
+        <div class="trusted__content carusel">
+            <div class="trusted__div">
+                <p class="trusted__title">
                     Trusted by the world’s most innovative businesses – big and small
                 </p>
-                <p class="trusted_text">
-                    “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails,
+                <p class="trusted__text">
+                    “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send
+                    emails,
                     find
                     freelancers. Perfect for sales, marketing, and support”
                 </p>
-                <p class="trusted_name">
+                <p class="trusted__name">
                     Viella Malkovich
                 </p>
-                <p class="trusted_work">
+                <p class="trusted__work">
                     Creative Director at Johnson
                 </p>
             </div>
-            <!-- Picture Right -->
-            <div class="trusted_rightpic">
-                <img src="./img/sharik.png" alt="green ball">
+            <div class="trusted__div">
+                <p class="trusted__title">
+                    Trusted by the world’s most innovative businesses – big and small
+                </p>
+                <p class="trusted__text">
+                    “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send
+                    emails,
+                    find
+                    freelancers. Perfect for sales, marketing, and support”
+                </p>
+                <p class="trusted__name">
+                    Viella Malkovich
+                </p>
+                <p class="trusted__work">
+                    Creative Director at Johnson
+                </p>
             </div>
+            <div class="trusted__div">
+                <p class="trusted__title">
+                    Trusted by the world’s most innovative businesses – big and small
+                </p>
+                <p class="trusted__text">
+                    “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send
+                    emails,
+                    find
+                    freelancers. Perfect for sales, marketing, and support”
+                </p>
+                <p class="trusted__name">
+                    Viella Malkovich
+                </p>
+                <p class="trusted__work">
+                    Creative Director at Johnson
+                </p>
+            </div>
+        </div>
+
+        <!-- Picture Right -->
+        <div class="trusted__rightpic">
+            <img src="./img/sharik.png" alt="green ball">
         </div>
     </section>
 
 
     <!-- !WE'RE HIRING -->
-    <section class="hiring">
+    <section id="hiring" class="hiring">
         <div class="hiring__div container">
             <div>
                 <!-- Text+Button -->
@@ -546,9 +587,27 @@
                             Get Started
                         </button>
                     </div>
-                    <p class="start_text-term">
-                        Free 14-day trial · Easy setup · Cancel any time. Check out <span class="start_span">Terms of Use.</span>
-                    </p>
+                    <!-- Checkboxes -->
+                    <div class="start__checkboxes">
+                        <label>
+                            <input type="radio" name="radio">
+                            <span class="text__checkbox">Free 14-day trial</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio">
+                            <span class="text__checkbox">Easy setup</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio">
+                            <span class="text__checkbox">Cancel any time</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="checkbox" required>
+                            <span class="text__checkbox">
+                                Check out <a href="#">Terms of Use</a>
+                            </span>
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
@@ -657,10 +716,17 @@
         </div>
     </div>
 
+    <!-- ?Кнопка Вверх -->
+    <div id="up">
+        <span>&#10148;</span>
+    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+    <script src="./script/bxslider.js"></script>
+    <script src="./script/upButton.js"></script>
     <script src="./script/script.js"></script>
     <script src="./script/modal.js"></script>
     
