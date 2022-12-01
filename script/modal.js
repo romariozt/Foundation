@@ -6,10 +6,10 @@ $('.modal__overlay').on('click', function () {
     }
 });
 
-$('.close').on('.click', function(){
+$('.close').on('click', function(){
     $(this).parents('.modal__overlay').fadeOut()
 })
 
 $('#open__modal').on('click', function(){
-    $('modal__overlay').fadeIn()
+    $('.modal__overlay').fadeIn()
 })
