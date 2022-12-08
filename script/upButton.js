@@ -1,6 +1,6 @@
 // !Кнопка на верх
 $(window).on('scroll', function () {
-  if ($(this).scrollTop() > 500){
+  if ($(this).scrollTop() > 700){
     $('#up').fadeIn()
   }else{
     $('#up').fadeOut()

@@ -14,10 +14,17 @@ $('.features__item-box').on('click', function () {
 })
 
 
-// !Переход по ссылке
+// !Переход по ссылке HOME
 $('#hiring-link').on('click', function (e) {
     e.preventDefault();
     $('html, body').animate({ scrollTop: $('#hiring').offset().top}, 1000)
+})
+
+
+// !Переход по ссылке STORIES
+$('#engage_link').on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $('#engage').offset().top}, 1000)
 })
 
 

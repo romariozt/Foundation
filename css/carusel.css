@@ -5,11 +5,14 @@
   margin: 0 auto;
   padding-bottom: 50px;
   max-width: 750px;
-
 }
-.bx-wrapper .bx-pager .bx-default-pager a {
+.bx-wrapper .bx-pager {
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background-color: blue;
+}
+
+.bx-pager-item {
+
 }

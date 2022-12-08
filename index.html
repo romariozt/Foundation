@@ -20,6 +20,7 @@
     
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/carusel.css">
+
 </head>
 
 <body>
@@ -46,7 +47,7 @@
                         <a class="header__link" id="hiring-link" href="">Home</a>
                     </li>
                     <li class="header__li">
-                        <a class="header__link" href="">Stories</a>
+                        <a class="header__link" id="engage_link" href="">Stories</a>
                     </li>
                 </ul>
                 <button class="header__button">
@@ -59,7 +60,7 @@
     <!-- !MAIN PAGE -->
     <main class="main">
         <div class="container flex main__container">
-            <div>
+            <div class="main__div">
                 <!-- Title -->
                 <h1 class="main__title">
                     Build stunning <br> websites & apps.
@@ -78,7 +79,6 @@
                     </button>
                 </div>
             </div>
-
             <div class="main__img">
                 <img src="./img/main/main-img.png" alt="main image">
             </div>
@@ -304,7 +304,7 @@
 
 
     <!-- !ENGAGE VISITORS -->
-    <section class="engage">
+    <section id="engage" class="engage">
         <div class="engage_box container">
             <!-- Engage Text-Box -->
             <div class="engage_textbox container">
@@ -379,73 +379,40 @@
         </div>
     </section>
 
-    <section class="trusted ">
-        <div class="container">
+    <section class="trusted">
             <!-- Carusel -->
-            <div class="trusted__content carusel">
-                <div class="trusted__div">
-                    <div class="">
-                        <p class="trusted__title">
-                            Trusted by the world’s most innovative businesses – big and small
-                        </p>
-                        <p class="trusted__text">
-                            “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send
-                            emails,
-                            find
-                            freelancers. Perfect for sales, marketing, and support”
-                        </p>
-                        <p class="trusted__name">
-                            Viella Malkovich
-                        </p>
-                        <p class="trusted__work">
-                            Creative Director at Johnson
-                        </p>
+            <div class="container ">
+                <div class="trusted__block carusel">
+                    <div>
+                        <p class="trusted__title">Trusted by the world’s most innovative businesses – big and small</p>
+                        <p class="trusted__text">“Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing
+                            pages, send
+                            emails, find freelancers. Perfect for sales, marketing, and support”</p>
+                        <p class="trusted__name">Viella Malkovich</p>
+                        <p class="trusted__work">Creative Director at Johnson</p>
                     </div>
-                </div>
-                <div class="trusted__div">
-                    <div class="">
-                        <p class="trusted__title">
-                            Trusted by the world’s most innovative businesses – big and small
-                        </p>
-                        <p class="trusted__text">
-                            “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send
-                            emails,
-                            find
-                            freelancers. Perfect for sales, marketing, and support”
-                        </p>
-                        <p class="trusted__name">
-                            Viella Malkovich
-                        </p>
-                        <p class="trusted__work">
-                            Creative Director at Johnson
-                        </p>
+                    <div>
+                        <p class="trusted__title">Trusted by the world’s most innovative businesses – big and small</p>
+                        <p class="trusted__text">“Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing
+                            pages, send
+                            emails, find freelancers. Perfect for sales, marketing, and support”</p>
+                        <p class="trusted__name">Viella Malkovich</p>
+                        <p class="trusted__work">Creative Director at Johnson</p>
                     </div>
-                </div>
-                <div class="trusted__div">
-                    <div class="">
-                        <p class="trusted__title">
-                            Trusted by the world’s most innovative businesses – big and small
-                        </p>
-                        <p class="trusted__text">
-                            “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send
-                            emails,
-                            find
-                            freelancers. Perfect for sales, marketing, and support”
-                        </p>
-                        <p class="trusted__name">
-                            Viella Malkovich
-                        </p>
-                        <p class="trusted__work">
-                            Creative Director at Johnson
-                        </p>
+                    <div>
+                        <p class="trusted__title">Trusted by the world’s most innovative businesses – big and small</p>
+                        <p class="trusted__text">“Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing
+                            pages, send
+                            emails, find freelancers. Perfect for sales, marketing, and support”</p>
+                        <p class="trusted__name">Viella Malkovich</p>
+                        <p class="trusted__work">Creative Director at Johnson</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Picture Right -->
-        <div class="trusted__rightpic">
-            <img src="./img/sharik.png" alt="green ball">
-        </div>
+            <!-- Picture Right -->
+            <div class="trusted__rightpic">
+                <img src="./img/sharik.png" alt="green ball">
+            </div>
     </section>
 
 
@@ -590,7 +557,7 @@
                             <label class="start_label" for="email"></label>
                             <input class="start_input" type="email" placeholder="Enter your email" required>
                         </form>
-                        <button class="start_button" type="button">
+                        <button class="start_button" type="submit">
                             Get Started
                         </button>
                     </div>

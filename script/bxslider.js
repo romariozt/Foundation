@@ -1,6 +1,8 @@
 // !Слайдер (Карусель)
 $('.carusel').bxSlider({
-    mode: 'fade',
+    mode: 'horizontal',
     controls: false,
-    randomStart: true
+    auto: true,
+    pause: 5000,
+    autoHover: true,
 });
